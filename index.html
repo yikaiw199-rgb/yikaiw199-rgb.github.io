@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>王奕凯 Wang Yikai</title>
+<meta name="description" content="王奕凯 Wang Yikai — 莫纳什大学商业分析专业本科生，寻找数据分析、商业分析与金融方向实习。Business Analytics student at Monash University Malaysia.">
+<meta property="og:title" content="王奕凯 Wang Yikai">
+<meta property="og:description" content="Business Analytics · Monash University Malaysia · 寻找数据分析 / 商业分析 / 金融实习">
+<meta name="theme-color" content="#081428">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314294D'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23E2C17E' font-family='PingFang SC,Noto Sans SC,sans-serif' font-weight='700'%3E%E5%87%AF%3C/text%3E%3C/svg%3E">
+<style>*,*::before,*::after{box-sizing:border-box}html{color-scheme:light;scroll-behavior:smooth}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}section[id]{scroll-margin-top:56px}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+/* Layout: Apple-style product page — a blue-hour hero, then quiet white chapters with large centred headlines; gold only as a thin accent. */
+:root{
+  --bg:#FBFBFD; --alt:#F5F5F7; --ink:#1D1D1F; --muted:#6E6E73; --rule:#D2D2D7;
+  --gold:#8F6B2C; --gold-soft:#C9A45C; --link:#0A5BC4;
+  --hero-a:#081428; --hero-b:#14294D; --hero-c:#2E4A78; --hero-ink:#F5F5F7; --hero-muted:#AEB9CC; --hero-gold:#E2C17E;
+  --card:#FFFFFF; --shadow:0 2px 24px rgba(16,24,40,.07); --bar-a:#8A9DBF; --bar-b:#1F3A66;
+  --f:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","PingFang SC","Inter","Noto Sans SC","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#000000; --alt:#111113; --ink:#F5F5F7; --muted:#A1A1A6; --rule:#2C2C2F;
+  --gold:#D9B66F; --gold-soft:#B8964F; --link:#4DA3FF; --card:#1C1C1E; --shadow:none; --bar-a:#7D93BA; --bar-b:#4E6FA6; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#000000; --alt:#111113; --ink:#F5F5F7; --muted:#A1A1A6; --rule:#2C2C2F;
+  --gold:#D9B66F; --gold-soft:#B8964F; --link:#4DA3FF; --card:#1C1C1E; --shadow:none; --bar-a:#7D93BA; --bar-b:#4E6FA6; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+[data-lang="zh"] .en,[data-lang="en"] .zh{display:none}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px;border-radius:6px}
+.inner{max-width:980px;margin:0 auto;padding-inline:22px}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--hero-a) 82%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+nav .inner{display:flex;align-items:center;justify-content:space-between;height:48px}
+.brand{color:var(--hero-ink);font-weight:600;font-size:15px;letter-spacing:.02em}
+.links{display:flex;gap:22px;font-size:13px}
+.links a{color:var(--hero-muted)}
+.links a:hover{color:var(--hero-ink);text-decoration:none}
+.toggle{display:inline-flex;background:rgba(255,255,255,.1);border-radius:999px;padding:2px}
+.toggle button{font:500 12px/1 var(--f);color:var(--hero-muted);background:none;border:0;border-radius:999px;padding:7px 12px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--hero-ink);color:var(--hero-a)}
+.navr{display:flex;align-items:center;gap:22px}
+@media (max-width:720px){.links{display:none}}
+
+/* hero */
+.hero{background:radial-gradient(120% 60% at 50% 115%,rgba(226,193,126,.28),transparent 60%),linear-gradient(180deg,var(--hero-a) 0%,var(--hero-b) 55%,var(--hero-c) 100%);color:var(--hero-ink);text-align:center;padding-block:96px 104px}
+.eyebrow{font-size:15px;font-weight:500;color:var(--hero-gold);letter-spacing:.02em}
+.hero h1{font-size:clamp(30px,4.4vw,40px);line-height:1.1;font-weight:600;letter-spacing:.06em;margin:14px 0 0}
+.pinyin{font-size:13px;color:var(--hero-muted);letter-spacing:.3em;text-transform:uppercase;margin-top:10px;padding-left:.3em}
+.tagline{font-size:clamp(32px,5.6vw,52px);font-weight:700;line-height:1.12;margin:40px auto 0;max-width:18ch;text-wrap:balance;letter-spacing:-.01em}
+.sub{color:var(--hero-muted);font-size:18px;margin:14px auto 0;max-width:46ch;text-wrap:balance}
+.ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:34px}
+.btn{display:inline-block;font-size:16px;font-weight:500;border-radius:999px;padding:12px 24px}
+.btn.primary{background:var(--hero-ink);color:var(--hero-a)}
+.btn.ghost{color:var(--hero-gold);border:1px solid rgba(226,193,126,.55)}
+.btn:hover{text-decoration:none;opacity:.88}
+
+/* chapters */
+.chapter{padding-block:96px}
+.chapter.alt{background:var(--alt)}
+.kicker{font-size:15px;font-weight:600;color:var(--gold);text-align:center}
+h2{font-size:clamp(34px,5.6vw,52px);line-height:1.08;font-weight:700;letter-spacing:-.01em;text-align:center;margin:8px auto 0;max-width:20ch;text-wrap:balance}
+[data-lang="zh"] h2{letter-spacing:.02em}
+.intro{color:var(--muted);font-size:19px;text-align:center;max-width:52ch;margin:18px auto 0;text-wrap:balance}
+.content{margin-top:56px}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.facts .v{font-size:clamp(22px,3vw,30px);font-weight:600;line-height:1.2}
+.facts .l{color:var(--muted);font-size:14px;margin-top:6px}
+@media (max-width:720px){.facts{grid-template-columns:1fr 1fr;row-gap:36px}}
+
+/* paper */
+.paper{background:var(--card);border-radius:22px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.35fr 1fr;overflow:hidden}
+.paper .txt{padding:44px;min-width:0}
+.badge{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--gold);border:1px solid var(--gold-soft);border-radius:999px;padding:5px 11px}
+.paper h3{font-size:25px;line-height:1.3;font-weight:600;margin:18px 0 0;text-wrap:balance}
+.meta{color:var(--muted);font-size:15px;margin-top:14px}
+.paper p{margin:16px 0 0}
+.paper .doc{background:var(--alt);display:flex;align-items:center;justify-content:center;padding:32px}
+@media (max-width:760px){.paper{grid-template-columns:1fr}.paper .txt{padding:28px}}
+
+/* doc thumbnails */
+.thumb{display:block;border:0;padding:0;background:none;cursor:zoom-in;text-align:center;font:inherit;color:var(--muted)}
+.thumb img{display:block;width:100%;max-width:240px;margin:0 auto;border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,.14);transition:transform .25s}
+.thumb:hover img{transform:translateY(-3px)}
+.thumb .cap{display:block;font-size:13px;margin-top:12px}
+
+/* timeline */
+.entries{display:grid;gap:20px}
+.entry{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:32px 36px;display:grid;grid-template-columns:190px 1fr;gap:28px}
+.when{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums;line-height:1.5}
+.when b{display:block;color:var(--ink);font-weight:600;font-size:15px}
+.entry .b{min-width:0}
+.entry h3{font-size:21px;line-height:1.35;font-weight:600;margin:0;text-wrap:balance}
+.role{color:var(--muted);font-size:15px;margin-top:4px}
+.entry ul{margin:14px 0 0;padding-left:20px}
+.entry li{margin:6px 0}
+.live{display:inline-block;font-size:12px;font-weight:600;color:var(--gold);margin-left:10px;vertical-align:3px;white-space:nowrap}
+.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold-soft);margin-right:6px;vertical-align:1px}
+@media (max-width:760px){.entry{grid-template-columns:1fr;gap:10px;padding:26px 24px}}
+
+/* credentials */
+blockquote{margin:0 auto;max-width:760px;text-align:center}
+blockquote .q{font-size:clamp(24px,3.6vw,34px);line-height:1.3;font-weight:600;text-wrap:balance}
+blockquote .q em{font-style:normal;color:var(--gold)}
+blockquote .tr{color:var(--muted);font-size:17px;margin-top:14px}
+blockquote footer{color:var(--muted);font-size:15px;margin-top:20px}
+.docs{display:grid;grid-template-columns:repeat(2,minmax(0,240px));justify-content:center;gap:56px;margin-top:64px}
+.note{text-align:center;color:var(--muted);font-size:14px;margin-top:40px}
+@media (max-width:560px){.docs{grid-template-columns:repeat(2,1fr);gap:20px}}
+
+/* edu + skills */
+.edu{text-align:center}
+.edu h3{font-size:26px;font-weight:600;margin:0}
+.edu .role{font-size:17px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+.chips span{background:var(--card);box-shadow:var(--shadow);border:1px solid var(--rule);border-radius:999px;padding:7px 16px;font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.skills h3{font-size:19px;font-weight:600;margin:0 0 8px}
+.skills h3::before{content:"";display:block;width:24px;height:2px;background:var(--gold-soft);margin-bottom:16px}
+.skills p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:860px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.skills{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:linear-gradient(180deg,var(--hero-b),var(--hero-a));color:var(--hero-ink);text-align:center;padding-block:96px}
+.contact h2{color:var(--hero-ink)}
+.contact .intro{color:var(--hero-muted)}
+.addr{font-size:clamp(22px,4vw,32px);font-weight:600;margin-top:36px;user-select:all;word-break:break-all;color:var(--hero-gold)}
+.copy{margin-top:22px;font:500 16px/1 var(--f);background:var(--hero-ink);color:var(--hero-a);border:0;border-radius:999px;padding:13px 26px;cursor:pointer}
+.foot{text-align:center;color:var(--hero-muted);font-size:12px;padding-block:28px;background:var(--hero-a)}
+
+/* paper framework */
+.lenses{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:20px}
+.lens{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:22px 20px;min-width:0}
+.lens .n{font-size:13px;font-weight:600;color:var(--gold);font-variant-numeric:tabular-nums}
+.lens h4{font-size:16px;font-weight:600;margin:8px 0 6px;line-height:1.35}
+.lens p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+.sub-h{font-size:21px;font-weight:600;text-align:center;margin:72px 0 0}
+.finding{max-width:720px;margin:28px auto 0;text-align:center;font-size:clamp(20px,2.6vw,26px);font-weight:600;line-height:1.4;text-wrap:balance}
+.finding em{font-style:normal;color:var(--gold)}
+.finding-note{max-width:640px;margin:14px auto 0;text-align:center;color:var(--muted);font-size:16px}
+@media (max-width:960px){.lenses{grid-template-columns:repeat(2,1fr)}.lens:last-child{grid-column:1/-1}}
+@media (max-width:480px){.lenses{grid-template-columns:1fr}}
+
+/* case study */
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cell{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:28px;min-width:0}
+.cell .k{font-size:13px;font-weight:600;color:var(--gold)}
+.cell h4{font-size:19px;font-weight:600;margin:8px 0 8px;line-height:1.35}
+.cell p,.cell li{font-size:15px;color:var(--muted);margin:0}
+.cell ul{margin:0;padding-left:18px}
+.cell li{margin:4px 0}
+@media (max-width:860px){.case-grid{grid-template-columns:1fr}}
+.val{background:var(--card);border-radius:22px;box-shadow:var(--shadow);padding:40px;margin-top:20px}
+.val h4{font-size:22px;font-weight:600;margin:0}
+.val .lead{color:var(--muted);margin:6px 0 0;font-size:15px}
+.chart{margin-top:32px;position:relative}
+.row{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:center;padding:10px 0}
+.row .lab{font-size:14px;line-height:1.35}
+.row .lab small{display:block;color:var(--muted);font-size:12px}
+.track{position:relative;height:30px}
+.track .band{top:-10px;bottom:-10px}
+.bar{position:absolute;left:0;top:4px;height:22px;border-radius:5px;background:var(--bar-a)}
+.bar.floor{background:var(--bar-b)}
+.bar.syn{background:var(--gold-soft)}
+.bar.stack{background:linear-gradient(90deg,var(--bar-b) 0 50.26%,var(--gold-soft) 50.26% 100%)}
+.bar span{position:absolute;left:calc(100% + 8px);top:0;line-height:22px;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+.band{position:absolute;top:0;bottom:0;border-left:1.5px dashed var(--gold);border-right:1.5px dashed var(--gold);background:color-mix(in srgb,var(--gold-soft) 14%,transparent);pointer-events:none}
+.band b{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--gold);white-space:nowrap}
+.axis{display:grid;grid-template-columns:200px 1fr;gap:16px;margin-top:6px}
+.ticks{position:relative;height:18px;border-top:1px solid var(--rule)}
+.ticks i{position:absolute;top:4px;transform:translateX(-50%);font-style:normal;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.plot{position:relative}
+.fin{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;padding-top:22px;border-top:1px solid var(--rule)}
+.fin .k{font-size:13px;font-weight:600;color:var(--gold)}
+.fin p{margin:4px 0 0;font-size:15px}
+@media (max-width:640px){.fin{grid-template-columns:1fr;gap:14px}}
+.track .band{left:60%;width:20%}
+.lab-panel{margin-top:30px;background:var(--alt);border-radius:16px;padding:24px}
+.lab-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.lab-head .k{font-size:13px;font-weight:600;color:var(--gold)}
+.lab-head p{margin:4px 0 0;font-size:15px;color:var(--muted)}
+.reset{font:500 13px/1 var(--f);background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:9px 14px;cursor:pointer}
+.sliders{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px 28px;margin-top:20px}
+.sl{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:4px 10px;font-size:14px}
+.sl output{font-weight:600;font-variant-numeric:tabular-nums;color:var(--gold)}
+.sl input{grid-column:1/-1;width:100%;accent-color:var(--gold-soft);margin:6px 0 0}
+.result{margin-top:22px;padding-top:18px;border-top:1px solid var(--rule);font-size:15px;color:var(--muted)}
+.result .big{font-size:clamp(28px,4vw,36px);font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;margin-top:2px}
+.result .big small{font-size:15px;font-weight:500;color:var(--muted)}
+.result .hint{font-size:13px;margin-top:6px}
+.val .foot-note{color:var(--muted);font-size:13px;margin-top:22px}
+@media (max-width:640px){.val{padding:24px}.row,.axis{grid-template-columns:1fr;gap:6px}.axis>div:first-child{display:none}.track{margin-right:56px}}
+
+.site-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.site-grid h3{font-size:19px;font-weight:600;margin:0 0 8px}
+.site-grid h3::before{content:"";display:block;width:24px;height:2px;background:var(--gold-soft);margin-bottom:16px}
+.site-grid p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.site-grid{grid-template-columns:1fr;gap:28px}}
+
+/* lightbox */
+.lb[hidden]{display:none}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb img{max-height:92vh;max-width:100%;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb button{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:16px;background:rgba(255,255,255,.16);color:#fff;border:0;border-radius:999px;width:40px;height:40px;font-size:22px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.thumb img{transition:none}}
+</style>
+
+</head>
+<body>
+<div id="page" data-lang="zh">
+  <nav>
+    <div class="inner">
+      <span class="brand">王奕凯</span>
+      <div class="navr">
+        <div class="links">
+          <a href="#research"><span class="zh">研究</span><span class="en">Research</span></a>
+          <a href="#case"><span class="zh">案例</span><span class="en">Case study</span></a>
+          <a href="#experience"><span class="zh">经历</span><span class="en">Experience</span></a>
+          <a href="#credentials"><span class="zh">证明</span><span class="en">Credentials</span></a>
+          <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+        </div>
+        <div class="toggle" role="group" aria-label="Language">
+          <button type="button" id="btn-zh" data-set="zh" aria-pressed="true">中文</button>
+          <button type="button" id="btn-en" data-set="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="inner">
+      <div class="eyebrow"><span class="zh">商业分析 · 莫纳什大学马来西亚分校</span><span class="en">Business Analytics · Monash University Malaysia</span></div>
+      <h1>王奕凯</h1>
+      <div class="pinyin">Wang Yikai</div>
+      <p class="tagline"><span class="zh">用数据，把商业问题讲清楚。</span><span class="en">Making business questions clear with data.</span></p>
+      <p class="sub"><span class="zh">关注金融科技、移动支付与消费者行为。正在寻找数据分析、商业分析或金融科技方向的实习。</span><span class="en">Focused on fintech, mobile payments and consumer behaviour. Looking for internships in data analytics, business analytics or fintech.</span></p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact"><span class="zh">联系我</span><span class="en">Get in touch</span></a>
+        <a class="btn ghost" href="#research"><span class="zh">查看论文 ›</span><span class="en">Read about my paper ›</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="chapter">
+    <div class="inner">
+      <div class="facts">
+        <div><div class="v">ICDDE 2026</div><div class="l"><span class="zh">国际会议论文录用</span><span class="en">Peer-reviewed paper accepted</span></div></div>
+        <div><div class="v"><span class="zh">优秀</span><span class="en">Excellent</span></div><div class="l"><span class="zh">科研项目导师评价</span><span class="en">Rating from research supervisor</span></div></div>
+        <div><div class="v"><span class="zh">港大</span><span class="en">HKU</span></div><div class="l"><span class="zh">金融与会计访学</span><span class="en">Finance &amp; accounting programme</span></div></div>
+        <div><div class="v">2028</div><div class="l"><span class="zh">预计毕业</span><span class="en">Expected graduation</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter alt" id="research">
+    <div class="inner">
+      <div class="kicker"><span class="zh">研究成果</span><span class="en">Research</span></div>
+      <h2><span class="zh">一篇通过同行评审的论文。</span><span class="en">A peer-reviewed paper, on my own.</span></h2>
+      <p class="intro"><span class="zh">梳理近十年国内外关于移动支付用户行为的研究，覆盖支付宝、微信支付、Apple Pay 与电子银行。</span><span class="en">A systematic review of a decade of global research on mobile payment behaviour, across Alipay, WeChat Pay, Apple Pay and electronic banking.</span></p>
+      <div class="content">
+        <div class="paper">
+          <div class="txt">
+            <span class="badge">ICDDE 2026 · Paper ID ICDDE2641</span>
+            <h3>An Analysis of Consumers’ Mobile Payment Behavior: Based on Apple Pay, Ali Pay, WeChat Pay and Electric Bank</h3>
+            <div class="meta"><span class="zh">独立作者 · 第三届数字经济发展国际会议 · 中国香港 · 2026 年 5 月 15–17 日</span><span class="en">Independent author · The 3rd International Conference on Development of Digital Economy · Hong Kong · 15–17 May 2026</span></div>
+            <p><span class="zh">系统梳理该领域的主要研究方向、核心方法与代表性结论，指出现有研究的不足，并提出未来研究方向。论文通过同行评审，由 ScitePress 出版。</span><span class="en">Maps the field’s main research directions, core methods and representative findings, identifies gaps in existing work, and proposes directions for future study. Peer-reviewed and published by ScitePress.</span></p>
+            <p class="meta" style="margin-top:12px"><span class="zh">关键词：移动支付 · 行为研究 · Apple Pay</span><span class="en">Keywords: Mobile Payment · Behavior Study · Apple Pay</span></p>
+          </div>
+          <div class="doc">
+            <button type="button" class="thumb" data-full="img/acceptance.jpg" id="t-accept">
+              <img src="img/acceptance.jpg" alt="ICDDE 2026 acceptance letter" loading="lazy">
+              <span class="cap"><span class="zh">论文录用函 · 点击查看</span><span class="en">Acceptance letter · tap to view</span></span>
+            </button>
+          </div>
+        </div>
+
+        <h3 class="sub-h"><span class="zh">论文从五个视角展开</span><span class="en">Five lenses the paper works through</span></h3>
+        <div class="lenses">
+          <div class="lens"><div class="n">2.1</div><h4><span class="zh">技术接受</span><span class="en">Technology acceptance</span></h4><p><span class="zh">用 TAM 与 UTAUT 解释用户最初为什么开始用。</span><span class="en">TAM and UTAUT explain why users start.</span></p></div>
+          <div class="lens"><div class="n">2.2</div><h4><span class="zh">信任、安全与风险</span><span class="en">Trust, security &amp; risk</span></h4><p><span class="zh">资金安全、隐私与平台治理如何影响使用意愿。</span><span class="en">How fund safety, privacy and platform governance shape willingness to pay.</span></p></div>
+          <div class="lens"><div class="n">2.3</div><h4><span class="zh">支付体验与心理</span><span class="en">Experience &amp; psychology</span></h4><p><span class="zh">移动支付降低“支付痛感”，让人更容易花钱。</span><span class="en">Mobile payment lowers the “pain of paying” and nudges spending up.</span></p></div>
+          <div class="lens"><div class="n">2.4</div><h4><span class="zh">平台特征比较</span><span class="en">Platform comparison</span></h4><p><span class="zh">技术、生态与制度差异，比如 Apple Pay 靠的是品牌信任。</span><span class="en">Technical, ecosystem and institutional differences, e.g. Apple Pay wins on brand trust.</span></p></div>
+          <div class="lens"><div class="n">2.5</div><h4><span class="zh">多平台整合</span><span class="en">Multi-platform integration</span></h4><p><span class="zh">多理论、分场景的整合框架解释更复杂的行为。</span><span class="en">Multi-theory, scenario-based frameworks for more complex behaviour.</span></p></div>
+        </div>
+        <p class="finding"><span class="zh">核心结论：研究问题已经从“用不用”转向<em>“为什么选它”</em>。</span><span class="en">Core finding: the research question has shifted from “whether to use” to <em>“why choose this one”</em>.</span></p>
+        <p class="finding-note"><span class="zh">现有研究仍缺跨市场样本、纵向数据与模型整合，这是未来值得做的方向。</span><span class="en">Gaps remain in cross-market samples, longitudinal data and model integration, which is where future work should go.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="case">
+    <div class="inner">
+      <div class="kicker"><span class="zh">项目案例 · 香港大学</span><span class="en">Case study · HKU</span></div>
+      <h2><span class="zh">太平洋咖啡收购估值。</span><span class="en">Valuing Pacific Coffee.</span></h2>
+      <p class="intro"><span class="zh">作为财务顾问小组，评估一家中国饮料企业收购国际咖啡连锁的战略价值。报告分六部分，每人负责一部分，<strong style="color:var(--ink)">我负责第四部分：财务评估</strong>，也就是下方的估值与融资方案。</span><span class="en">Acting as a team of financial consultants, we assessed a Chinese beverage group acquiring a global coffee chain. Each member owned one of six sections; <strong style="color:var(--ink)">I owned Part IV, the financial evaluation</strong>: the valuation and financing plan below.</span></p>
+      <div class="content">
+        <div class="case-grid">
+          <div class="cell"><div class="k"><span class="zh">市场</span><span class="en">Market</span></div><h4><span class="zh">稳步增长的蓝海</span><span class="en">A steadily growing market</span></h4><p><span class="zh">全球咖啡市场年复合增长 4.52%；中国的城镇化、中产扩张与年轻消费者推动需求。</span><span class="en">Global coffee grows at a 4.52% CAGR. Urbanisation, a growing middle class and young consumers drive demand in China.</span></p></div>
+          <div class="cell"><div class="k"><span class="zh">战略</span><span class="en">Rationale</span></div><h4><span class="zh">华润 × 太平洋咖啡</span><span class="en">China Resources × Pacific Coffee</span></h4><p><span class="zh">借华润的零售网络、物流与供应链降本增效，补齐集团饮品布局。</span><span class="en">China Resources’ retail network, logistics and supply chain cut costs and fill a gap in its beverage line-up.</span></p></div>
+          <div class="cell"><div class="k"><span class="zh">风险</span><span class="en">Risks</span></div><h4><span class="zh">夹在两强之间</span><span class="en">Squeezed between two giants</span></h4><p><span class="zh">瑞幸与星巴克双寡头挤压，品牌有老化风险；对策是差异化定位与双品牌协同。</span><span class="en">Luckin and Starbucks dominate and the brand risks looking dated. The answer: differentiated positioning and a dual-brand play.</span></p></div>
+        </div>
+
+        <div class="val">
+          <span class="badge" style="margin-bottom:14px"><span class="zh">我负责的部分 · 第四部分</span><span class="en">My section · Part IV</span></span>
+          <h4><span class="zh">在没有财报的情况下，怎么定价？</span><span class="en">How do you price a company with no financial statements?</span></h4>
+          <p class="lead"><span class="zh">我们用三种方法互相印证：以瑞幸、星巴克单店效率为基准推算经营价值，用 309 家门店的资产做价格底线，再把协同效应按 20% 审慎折算。单位：百万元人民币。</span><span class="en">We cross-checked three methods: operating value benchmarked on Luckin and Starbucks per-store efficiency, an asset floor from 309 stores, and synergies counted at a prudent 20%. Figures in RMB million.</span></p>
+          <div class="chart" role="img" aria-label="Valuation components in RMB million: standalone operating value 59.4, asset-based floor 97.7, payable synergy premium 96.7, ceiling 194.4; recommended range 150 to 200.">
+            <div class="row"><div class="lab"><span class="zh">独立经营价值</span><span class="en">Standalone operating value</span><small id="s-a">EBITDA 16.96 × 3.5x</small></div><div class="track"><div class="band"><b><span class="zh">原报告建议区间 150–200</span><span class="en">Report’s range 150–200</span></b></div><div class="bar" id="b-a" style="width:23.76%"><span>59.4</span></div></div></div>
+            <div class="row"><div class="lab"><span class="zh">资产法底线</span><span class="en">Asset-based floor</span><small id="s-b">309 × 0.30 + 5</small></div><div class="track"><div class="band"></div><div class="bar floor" id="b-b" style="width:39.08%"><span>97.7</span></div></div></div>
+            <div class="row"><div class="lab"><span class="zh">可支付协同溢价</span><span class="en">Payable synergy premium</span><small id="s-c">(463.5 + 20) × 20%</small></div><div class="track"><div class="band"></div><div class="bar syn" id="b-c" style="width:38.68%"><span>96.7</span></div></div></div>
+            <div class="row"><div class="lab"><span class="zh">价格上限</span><span class="en">Price ceiling</span><small><span class="zh">底线 + 协同溢价</span><span class="en">Floor + synergy premium</span></small></div><div class="track"><div class="band"></div><div class="bar stack" id="b-d" style="width:77.76%"><span>194.4</span></div></div></div>
+            <div class="axis"><div></div><div class="ticks" id="ticks"><i style="left:0%;transform:none">0</i><i style="left:20%">50</i><i style="left:40%">100</i><i style="left:60%">150</i><i style="left:80%">200</i><i style="left:100%;transform:translateX(-100%)">250</i></div></div>
+          </div>
+          <div class="lab-panel">
+            <div class="lab-head">
+              <div><div class="k"><span class="zh">估值实验室</span><span class="en">Valuation lab</span></div><p><span class="zh">拖动滑块，改变关键假设，看价格区间怎么变。</span><span class="en">Drag the sliders to change the key assumptions and watch the price range move.</span></p></div>
+              <button type="button" class="reset" id="reset"><span class="zh">恢复原假设</span><span class="en">Reset</span></button>
+            </div>
+            <div class="sliders">
+              <label class="sl"><span class="t"><span class="zh">单店收入（相对星巴克中国）</span><span class="en">Revenue per store vs Starbucks China</span></span><output id="o-rev">20%</output><input type="range" id="i-rev" min="10" max="60" step="5" value="20"></label>
+              <label class="sl"><span class="t"><span class="zh">EBITDA 利润率</span><span class="en">EBITDA margin</span></span><output id="o-mar">8%</output><input type="range" id="i-mar" min="4" max="25" step="1" value="8"></label>
+              <label class="sl"><span class="t"><span class="zh">EV/EBITDA 倍数</span><span class="en">EV/EBITDA multiple</span></span><output id="o-mul">3.5x</output><input type="range" id="i-mul" min="2" max="12" step="0.5" value="3.5"></label>
+              <label class="sl"><span class="t"><span class="zh">单店净资产（百万）</span><span class="en">Net assets per store (M)</span></span><output id="o-ast">0.30</output><input type="range" id="i-ast" min="0.1" max="1" step="0.05" value="0.3"></label>
+              <label class="sl"><span class="t"><span class="zh">协同效应计入比例</span><span class="en">Share of synergies paid for</span></span><output id="o-syn">20%</output><input type="range" id="i-syn" min="0" max="50" step="5" value="20"></label>
+            </div>
+            <div class="result">
+              <div><span class="zh">按当前假设，谈判区间为</span><span class="en">With these assumptions, negotiate between</span></div>
+              <div class="big"><span id="r-lo">146</span> – <span id="r-hi">194</span> <small><span class="zh">百万元</span><span class="en">RMB M</span></small></div>
+              <div class="hint"><span class="zh">下限 = 较高底线 + 协同溢价 × 50%；上限 = 较高底线 + 全部协同溢价。按原假设算出约 146–194，原报告取整为 150–200。</span><span class="en">Low = higher floor + 50% of synergy premium; high = higher floor + full premium. The original assumptions give about 146–194, which the report rounded to 150–200.</span></div>
+            </div>
+          </div>
+          <p class="foot-note"><span class="zh">结论：从资产底线（约 0.98 亿）开始谈，上限不超过资产价值加协同溢价，建议收购价 1.5–2 亿元人民币。</span><span class="en">Conclusion: open negotiations near the asset floor (about RMB 98M), cap the price at floor plus synergy premium, and recommend RMB 150–200M.</span></p>
+          <div class="fin">
+            <div><div class="k"><span class="zh">为什么分层融资</span><span class="en">Why layer the financing</span></div><p><span class="zh">风险可控 · 降低资金成本 · 保住控制权</span><span class="en">Contain risk · lower cost of capital · keep control</span></p></div>
+            <div><div class="k"><span class="zh">怎么分</span><span class="en">The layers</span></div><p><span class="zh">优先级债务 · 夹层融资 · 股权</span><span class="en">Senior debt · mezzanine · equity</span></p></div>
+            <div><div class="k"><span class="zh">怎么落地</span><span class="en">Execution</span></div><p><span class="zh">定价与结构设计 · 同步募资 · 交割与投后管理</span><span class="en">Pricing &amp; structuring · concurrent fundraising · closing &amp; management</span></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter alt" id="experience">
+    <div class="inner">
+      <div class="kicker"><span class="zh">项目经历</span><span class="en">Experience</span></div>
+      <h2><span class="zh">在课堂之外，动手做。</span><span class="en">Learning by doing, beyond the classroom.</span></h2>
+      <div class="content entries">
+
+        <article class="entry">
+          <div class="when"><b>2026</b><span class="zh">进行中</span><span class="en">Ongoing</span></div>
+          <div class="b">
+            <h3><span class="zh">LVMH 美妆校园创意挑战赛</span><span class="en">LVMH Beauty Campus Creativity Challenge</span><span class="live"><span class="zh">参赛中</span><span class="en">In progress</span></span></h3>
+            <div class="role"><span class="zh">三人团队成员 · 娇兰 Guerlain 品牌案例</span><span class="en">Team member, team of three · Guerlain brand case</span></div>
+            <ul>
+              <li><span class="zh">围绕 “Crafting Time” 命题，为娇兰设计产品与门店体验方案。</span><span class="en">Developing a product and in-store experience proposal for Guerlain under the “Crafting Time” brief.</span></li>
+              <li><span class="zh">到马来西亚娇兰专柜实地调研，观察服务流程与顾客需求。</span><span class="en">Ran field research at a Guerlain counter in Malaysia to observe the service flow and customer needs.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><b><span class="zh">2026 年 1–2 月</span><span class="en">Jan – Feb 2026</span></b><span class="zh">中国香港</span><span class="en">Hong Kong</span></div>
+          <div class="b">
+            <h3><span class="zh">香港大学 · 全球领袖计划（金融与会计）</span><span class="en">HKU Global Leaders Programme – Finance and Accounting</span></h3>
+            <div class="role"><span class="zh">学员 · 香港大学中国商业学院 · 2026.01.31 – 02.06</span><span class="en">Participant · HKU Institute for China Business · 31 Jan – 6 Feb 2026</span></div>
+            <ul>
+              <li><span class="zh">参加金融与会计系列研讨课，参访香港金融管理局，了解香港金融市场环境。</span><span class="en">Attended a seminar series on finance and accounting and visited the Hong Kong Monetary Authority.</span></li>
+              <li><span class="zh">小组案例：太平洋咖啡收购分析。我负责财务评估部分，用三种方法推导出 1.5–2 亿元人民币的建议收购价，并设计分层融资结构（<a href="#case">详见上方案例</a>）。</span><span class="en">Group case on acquiring Pacific Coffee. I owned the financial evaluation: derived a recommended price of RMB 150–200 million from three valuation methods and designed a layered financing structure (<a href="#case">see case study</a>).</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><b><span class="zh">2025 年 12 月 – 2026 年 1 月</span><span class="en">Dec 2025 – Jan 2026</span></b><span class="zh">线上项目</span><span class="en">Online</span></div>
+          <div class="b">
+            <h3><span class="zh">科研项目 · 数据科学在金融业务中的应用</span><span class="en">Research Project · Application of Data Science in Financial Business</span></h3>
+            <div class="role"><span class="zh">学员 · 导师：李丹 副教授，香港中文大学（深圳）· 评价：优秀</span><span class="en">Participant · Supervised by Dan Li, Associate Professor, CUHK-Shenzhen · Rated Excellent</span></div>
+            <ul>
+              <li><span class="zh">学习另类数据在金融中的应用：个人消费信贷、企业另类数据、股价预测等。</span><span class="en">Studied alternative data in finance: consumer credit, alternative corporate data and stock price forecasting.</span></li>
+              <li><span class="zh">了解大数据、AI 决策、云计算与区块链如何支撑数字支付、智能投顾与保险科技。</span><span class="en">Explored how big data, AI decision-making, cloud and blockchain power digital payments, robo-advisory and insurtech.</span></li>
+              <li><span class="zh">结课成果：近十年国内外移动支付用户行为文献综述及汇报，后发展为上方的会议论文。</span><span class="en">Final project: a review of the past decade of research on mobile payment behaviour, with a presentation. It later became the conference paper above.</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="credentials">
+    <div class="inner">
+      <div class="kicker"><span class="zh">证明材料</span><span class="en">Credentials</span></div>
+      <blockquote>
+        <div class="q">“Overall, Yikai WANG’s performance in this program was <em>Excellent</em>.”</div>
+        <div class="tr zh">“总体而言，王奕凯在本项目中的表现为优秀。”</div>
+        <footer>Dan LI · Associate Professor · The Chinese University of Hong Kong, Shenzhen</footer>
+      </blockquote>
+      <div class="docs">
+        <button type="button" class="thumb" data-full="img/certificate.jpg" id="t-cert">
+          <img src="img/certificate.jpg" alt="Certificate of Completion, Application of Data Science in Financial Business" loading="lazy">
+          <span class="cap"><span class="zh">科研项目结业证书</span><span class="en">Certificate of completion</span></span>
+        </button>
+        <button type="button" class="thumb" data-full="img/acceptance.jpg" id="t-accept2">
+          <img src="img/acceptance.jpg" alt="ICDDE 2026 acceptance letter" loading="lazy">
+          <span class="cap"><span class="zh">ICDDE 2026 论文录用函</span><span class="en">ICDDE 2026 acceptance letter</span></span>
+        </button>
+      </div>
+      <p class="note"><span class="zh">完整推荐信及港大邀请函可应要求提供。</span><span class="en">Full reference letter and HKU invitation letter available on request.</span></p>
+    </div>
+  </section>
+
+  <section class="chapter alt" id="education">
+    <div class="inner">
+      <div class="kicker"><span class="zh">教育背景</span><span class="en">Education</span></div>
+      <div class="edu content" style="margin-top:20px">
+        <h3><span class="zh">莫纳什大学马来西亚分校</span><span class="en">Monash University Malaysia</span></h3>
+        <div class="role"><span class="zh">商学与商务学士 · 主修商业分析 · 2025.07 – 2028.04</span><span class="en">Bachelor of Business and Commerce · Major in Business Analytics · Jul 2025 – Apr 2028</span></div>
+        <div class="chips">
+          <span><span class="zh">数据挖掘与预测建模</span><span class="en">Data Mining &amp; Predictive Modelling</span></span>
+          <span><span class="zh">统计推断原理</span><span class="en">Principles of Statistical Inference</span></span>
+          <span><span class="zh">数据分析基础</span><span class="en">Foundations of Data Analysis</span></span>
+          <span><span class="zh">商业银行与金融</span><span class="en">Commercial Banking &amp; Finance</span></span>
+          <span><span class="zh">财务会计</span><span class="en">Financial Accounting</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="skills">
+    <div class="inner">
+      <div class="kicker"><span class="zh">技能</span><span class="en">Skills</span></div>
+      <h2><span class="zh">趁手的工具。</span><span class="en">The tools I work with.</span></h2>
+      <div class="content skills">
+        <div><h3>R</h3><p><span class="zh">数据清洗、统计分析与可视化，用于金融与市场研究；熟悉 RStudio 与 Shiny。</span><span class="en">Data processing, statistical analysis and visualisation for finance and market research. Comfortable in RStudio and Shiny.</span></p></div>
+        <div><h3>Excel</h3><p><span class="zh">数据透视表、条件格式、数组公式与 VBA 宏；熟练使用 PowerPoint 和 Word。</span><span class="en">Pivot tables, conditional formatting, array formulas and VBA macros. Fluent in PowerPoint and Word.</span></p></div>
+        <div><h3>SAS</h3><p><span class="zh">课程中使用 PROC SQL、PROC FREQ 等过程做数据分析。</span><span class="en">Coursework analysis with procedures such as PROC SQL and PROC FREQ.</span></p></div>
+        <div><h3><span class="zh">语言</span><span class="en">Languages</span></h3><p><span class="zh">中文（母语）· 英语（学习与工作语言）</span><span class="en">Mandarin (native) · English (study and working language)</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter alt" id="about-site">
+    <div class="inner">
+      <div class="kicker"><span class="zh">关于这个网站</span><span class="en">About this site</span></div>
+      <h2><span class="zh">我和 AI 一起搭的。</span><span class="en">Built by me, with AI.</span></h2>
+      <p class="intro"><span class="zh">内容、结构和每一个数字由我决定并核对，代码由 AI 编写。这是我把 AI 用到实际工作里的一次尝试。</span><span class="en">I decided the content and structure and checked every figure; AI wrote the code. It is one way I put AI to work on real tasks.</span></p>
+      <div class="content site-grid">
+        <div><h3><span class="zh">我做了什么</span><span class="en">What I did</span></h3><p><span class="zh">定目标与受众，整理经历与材料，核对原始文件（证书、录用函、报告），决定公开哪些信息、隐去哪些隐私信息，并逐版提出修改。</span><span class="en">Set the goal and audience, gathered my experience and documents, checked them against the originals, chose what to publish and what to keep private, and directed each revision.</span></p></div>
+        <div><h3><span class="zh">技术</span><span class="en">Tech</span></h3><p><span class="zh">原生 HTML、CSS 与 JavaScript，无框架；中英双语切换；手机与电脑自适应；跟随系统深浅色；托管于 GitHub Pages。</span><span class="en">Plain HTML, CSS and JavaScript with no framework. Chinese/English toggle, responsive on phone and desktop, follows light and dark mode. Hosted on GitHub Pages.</span></p></div>
+        <div><h3><span class="zh">交互</span><span class="en">Interactive</span></h3><p><span class="zh">上方的<a href="#case">估值实验室</a>把我负责的估值模型做成可调的工具，可以直接看到每个假设对价格的影响。</span><span class="en">The <a href="#case">valuation lab</a> above turns my part of the case into a working model, so you can see how each assumption moves the price.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="inner">
+      <h2><span class="zh">聊聊实习机会。</span><span class="en">Let’s talk internships.</span></h2>
+      <p class="intro"><span class="zh">欢迎通过邮件联系我。</span><span class="en">The best way to reach me is by email.</span></p>
+      <div class="addr" id="email">yikaiw199@gmail.com</div>
+      <button type="button" class="copy" id="copy"><span class="zh">复制邮箱</span><span class="en">Copy email</span></button>
+    </div>
+  </section>
+  <div class="foot">© 2026 王奕凯 Wang Yikai</div>
+
+  <div class="lb" id="lb" hidden>
+    <button type="button" id="lb-close" aria-label="Close">×</button>
+    <img id="lb-img" alt="">
+  </div>
+</div>
+
+<script>
+(function(){
+  var page=document.getElementById('page');
+  function set(l){
+    page.setAttribute('data-lang',l);
+    document.documentElement.lang=l==='zh'?'zh-CN':'en';
+    document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  set(saved||((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en'));
+  document.querySelectorAll('[data-set]').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set)})});
+
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lb-img');
+  document.querySelectorAll('.thumb').forEach(function(t){t.addEventListener('click',function(){
+    lbi.src=t.dataset.full;lbi.alt=t.querySelector('img').alt;lb.hidden=false;document.getElementById('lb-close').focus();
+  })});
+  function close(){lb.hidden=true}
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+
+  // valuation lab
+  var $=function(id){return document.getElementById(id)};
+  var D={rev:20,mar:8,mul:3.5,ast:0.3,syn:20};
+  function fmt(v){return v.toFixed(1)}
+  function calc(){
+    var rev=+$('i-rev').value,mar=+$('i-mar').value,mul=+$('i-mul').value,ast=+$('i-ast').value,syn=+$('i-syn').value;
+    $('o-rev').textContent=rev+'%';$('o-mar').textContent=mar+'%';$('o-mul').textContent=mul+'x';$('o-ast').textContent=ast.toFixed(2);$('o-syn').textContent=syn+'%';
+    var ebitda=309*3.43*rev/100*mar/100, A=ebitda*mul, B=309*ast+5, C=483.5*syn/100, F=Math.max(A,B), top=F+C;
+    var max=Math.max(250,Math.ceil((top*1.12)/50)*50), pct=function(v){return (v/max*100)+'%'};
+    [['b-a',A],['b-b',B],['b-c',C],['b-d',top]].forEach(function(x){var el=$(x[0]);el.style.width=pct(x[1]);el.firstElementChild.textContent=fmt(x[1])});
+    $('b-d').style.background='linear-gradient(90deg,var(--bar-b) 0 '+(top?F/top*100:0)+'%,var(--gold-soft) '+(top?F/top*100:0)+'% 100%)';
+    $('s-a').textContent='EBITDA '+ebitda.toFixed(2)+' × '+mul+'x';
+    $('s-b').textContent='309 × '+ast.toFixed(2)+' + 5';
+    $('s-c').textContent='(463.5 + 20) × '+syn+'%';
+    document.querySelectorAll('.track .band').forEach(function(b){b.style.left=pct(150);b.style.width=(50/max*100)+'%'});
+    var t='';for(var v=0;v<=max;v+=50){var st=v===0?'transform:none':(v===max?'transform:translateX(-100%)':'');t+='<i style="left:'+(v/max*100)+'%;'+st+'">'+v+'</i>'}
+    $('ticks').innerHTML=t;
+    $('r-lo').textContent=Math.round(F+C*0.5);$('r-hi').textContent=Math.round(top);
+  }
+  ['rev','mar','mul','ast','syn'].forEach(function(k){$('i-'+k).addEventListener('input',calc)});
+  $('reset').addEventListener('click',function(){Object.keys(D).forEach(function(k){$('i-'+k).value=D[k]});calc()});
+  calc();
+
+  var btn=document.getElementById('copy');
+  function label(zh,en){btn.querySelector('.zh').textContent=zh;btn.querySelector('.en').textContent=en}
+  btn.addEventListener('click',function(){
+    var addr=document.getElementById('email').textContent.trim();
+    function done(ok){label(ok?'已复制':'请长按或手动复制',ok?'Copied':'Select to copy');setTimeout(function(){label('复制邮箱','Copy email')},2000)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);done(false)}
+    try{navigator.clipboard.writeText(addr).then(function(){done(true)},fallback)}catch(e){fallback()}
+  });
+})();
+</script>
+
+</body>
+</html>
